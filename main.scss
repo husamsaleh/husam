@@ -36,7 +36,11 @@ nav{
 }
 .intro{
     height: 100vh;
-    padding-top: 100px;
+    img{
+        max-width: 400px;
+        border-radius: 20px;
+    }
+   
 }
 
 .me{
@@ -54,6 +58,13 @@ nav{
         animation-name:vectors_moving_v1;
         animation-duration: 6s;
   animation-iteration-count: infinite;
+    }
+    h2{
+        font-size:42px;
+    }
+    p{
+        font-size: 22px;
+        font-weight: 300 !important;
     }
 }
 
@@ -171,6 +182,46 @@ nav{
   }
 
   &:hover{
-    background-color: RoyalBlue;
+    background-color: #ecb900;
+    color: black !important;
   }
+}
+
+@media screen and (max-width:800px) {
+    .intro, .about, .projects{
+        margin-top: 100px;
+        img{
+            max-width: 250px;
+            margin-bottom: 50px;
+        }
+
+    }
+    .intro {
+        h5{
+            font-size: 16px;
+
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+        }
+        img{
+            max-width: 300px;
+
+        }
+    }
+    .about{
+        h2{
+            font-size:26px;
+        }
+        p{
+            font-size: 14px;
+            
+        }
+    
+    }
+
+
 }
