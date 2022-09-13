@@ -34,16 +34,9 @@ nav{
     
     
 }
-.carousel{
-    
-    max-height: 100vh;
-    .carousel-item{
-        height: 100%;
-        img{
-            max-height: 1000px;
-            object-fit: cover;
-        }
-    }
+.intro{
+    height: 100vh;
+    padding-top: 100px;
 }
 
 .me{
@@ -81,6 +74,7 @@ nav{
     0% {
         transform: translatey(0px);
     }
+    
     50%{
         transform: translatey(20px);
     }
@@ -163,4 +157,20 @@ nav{
            
         }
     }
+}
+
+.btn_cv{
+    background-color: #FFC801;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  i{
+    margin: 0 5px;
+  }
+
+  &:hover{
+    background-color: RoyalBlue;
+  }
 }

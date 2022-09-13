@@ -36,16 +36,9 @@ nav {
   background-color: rgba(0, 0, 0, 0.274);
 }
 
-.carousel {
-  max-height: 100vh;
-}
-.carousel .carousel-item {
-  height: 100%;
-}
-.carousel .carousel-item img {
-  max-height: 1000px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.intro {
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .me {
@@ -222,4 +215,19 @@ nav {
   border-radius: 5px;
   border: none;
   margin: auto;
+}
+
+.btn_cv {
+  background-color: #FFC801;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn_cv i {
+  margin: 0 5px;
+}
+.btn_cv:hover {
+  background-color: RoyalBlue;
 }
