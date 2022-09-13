@@ -7,11 +7,219 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: #FFC801 !important;
+}
+
 .h {
   font-size: 92px;
   text-shadow: 1px 1px 1px black;
 }
 
 body {
-  background: #e4e4e4;
+  background: rgba(255, 255, 255, 0);
+}
+
+nav {
+  z-index: 200;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
+.carousel {
+  max-height: 100vh;
+}
+.carousel .carousel-item {
+  height: 100%;
+}
+.carousel .carousel-item img {
+  max-height: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.me {
+  padding: 200px 0 50px 0;
+}
+.me img {
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+
+.about {
+  height: 100vh;
+}
+.about img {
+  max-width: 400px;
+  -webkit-animation-name: vectors_moving_v1;
+          animation-name: vectors_moving_v1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes vectors_moving_v1 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes vectors_moving_v1 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+@-webkit-keyframes vectors_moving_v2 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+@keyframes vectors_moving_v2 {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+.btn-up {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  padding: 10px 15px;
+  position: fixed;
+  z-index: 11111;
+  right: 20px;
+  bottom: 0;
+}
+
+.social {
+  margin-top: 200px;
+}
+.social i {
+  color: black;
+}
+.social i:hover {
+  color: #FFC801;
+}
+
+.projects {
+  height: 50vh;
+}
+.projects a {
+  color: #ffc801;
+  text-decoration: none;
+}
+.projects a:hover {
+  color: black !important;
+}
+.projects img {
+  max-width: 400px;
+  -webkit-animation-name: vectors_moving_v2;
+          animation-name: vectors_moving_v2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.modal-body form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.modal-body form input::-webkit-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form input::-moz-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form input:-ms-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form input::-ms-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form input::placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form textarea {
+  width: 100%;
+}
+.modal-body form textarea::-webkit-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form textarea::-moz-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form textarea:-ms-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form textarea::-ms-input-placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form textarea::placeholder {
+  color: black !important;
+  padding: 10px;
+}
+.modal-body form button {
+  color: black;
+  background: #FFC801;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
 }

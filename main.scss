@@ -6,6 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
+::selection{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+a{
+    &:hover{
+        color: #FFC801 !important;
+    }
+}
 
 .h{
     
@@ -14,7 +23,144 @@
 }
 
 body{
-    background: #e4e4e4;
+    background: #ffffff00;
 }
 
 
+nav{
+    z-index: 200;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+    
+    
+}
+.carousel{
+    
+    max-height: 100vh;
+    .carousel-item{
+        height: 100%;
+        img{
+            max-height: 1000px;
+            object-fit: cover;
+        }
+    }
+}
+
+.me{
+    padding:200px 0 50px 0 ;
+    img{
+        box-shadow: 0px 0px 5px white;
+
+    }
+}
+
+.about{
+    height: 100vh;
+    img{
+        max-width: 400px;
+        animation-name:vectors_moving_v1;
+        animation-duration: 6s;
+  animation-iteration-count: infinite;
+    }
+}
+
+
+@keyframes vectors_moving_v1{
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-20px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+@keyframes vectors_moving_v2{
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(20px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+
+.btn-up{
+    background-color: black;
+    color: white;
+    
+    font-size: 22px;
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 11111;
+    right: 20px;
+    bottom: 0;
+}
+
+.social{
+    margin-top: 200px;
+
+    i{
+        color: black;
+        &:hover{
+            color: #FFC801;
+            
+        }
+    }
+}
+
+
+
+.projects{
+    height: 50vh;
+    a{
+        color: #ffc801;
+        text-decoration: none;
+        &:hover{
+            color:black !important;
+        }
+        
+    }
+    img{
+        max-width: 400px;
+        animation-name:vectors_moving_v2;
+        animation-duration: 6s;
+  animation-iteration-count: infinite;
+    }
+}
+
+.modal-body{
+    form{
+        
+        input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            &::placeholder{
+                color: black !important;
+                padding: 10px;
+            }
+            
+        }
+        textarea{
+            width: 100%;
+            &::placeholder{
+                color: black !important;
+                padding: 10px;
+            }
+        }
+        button{
+            color: black;
+            background: #FFC801;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin: auto;
+           
+        }
+    }
+}
