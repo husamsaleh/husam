@@ -1,103 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
-::selection{
+
+::selection {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
 }
-a{
-    &:hover{
+
+a {
+    &:hover {
         color: #FFC801 !important;
     }
 }
 
-.h{
-    
-    font-size:92px;
+.h {
+
+    font-size: 92px;
     text-shadow: 1px 1px 1px black;
 }
 
-body{
+body {
     background: #ffffff00;
 }
 
 
-nav{
+nav {
     z-index: 200;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.274);
-    
-    
+
+
 }
-.intro{
+
+.intro {
     height: 100vh;
-    img{
+
+    img {
         max-width: 400px;
         border-radius: 20px;
     }
-   
+
 }
 
-.me{
-    padding:200px 0 50px 0 ;
-    img{
+.me {
+    padding: 200px 0 50px 0;
+
+    img {
         box-shadow: 0px 0px 5px white;
 
     }
 }
 
-.about{
+.about {
     height: 100vh;
-    img{
+
+    img {
         max-width: 400px;
-        animation-name:vectors_moving_v1;
+        animation-name: vectors_moving_v1;
         animation-duration: 6s;
-  animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
     }
-    h2{
-        font-size:42px;
+
+    h2 {
+        font-size: 42px;
     }
-    p{
+
+    p {
         font-size: 22px;
         font-weight: 300 !important;
     }
 }
 
 
-@keyframes vectors_moving_v1{
+@keyframes vectors_moving_v1 {
     0% {
         transform: translatey(0px);
     }
-    50%{
+
+    50% {
         transform: translatey(-20px);
     }
-    100%{
+
+    100% {
         transform: translatey(0px);
     }
 }
 
-@keyframes vectors_moving_v2{
+@keyframes vectors_moving_v2 {
     0% {
         transform: translatey(0px);
     }
-    
-    50%{
+
+    50% {
         transform: translatey(20px);
     }
-    100%{
+
+    100% {
         transform: translatey(0px);
     }
 }
 
-.btn-up{
+.btn-up {
     background-color: black;
     color: white;
-    
+
     font-size: 22px;
     padding: 10px 15px;
     position: fixed;
@@ -106,121 +118,140 @@ nav{
     bottom: 0;
 }
 
-.social{
+.social {
     margin-top: 200px;
 
-    i{
+    i {
         color: black;
-        &:hover{
+
+        &:hover {
             color: #FFC801;
-            
+
         }
     }
 }
 
 
 
-.projects{
+.projects {
     height: 50vh;
-    a{
+
+    a {
         color: #ffc801;
         text-decoration: none;
-        &:hover{
-            color:black !important;
+
+        &:hover {
+            color: black !important;
         }
-        
+
     }
-    img{
+
+    img {
         max-width: 400px;
-        animation-name:vectors_moving_v2;
+        animation-name: vectors_moving_v2;
         animation-duration: 6s;
-  animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
     }
 }
 
-.modal-body{
-    form{
-        
-        input{
+.modal-body {
+    form {
+
+        input {
             width: 100%;
             margin-bottom: 10px;
             padding: 8px;
-            &::placeholder{
+
+            &::placeholder {
                 color: black !important;
                 padding: 10px;
             }
-            
+
         }
-        textarea{
+
+        textarea {
             width: 100%;
-            &::placeholder{
+
+            &::placeholder {
                 color: black !important;
                 padding: 10px;
             }
         }
-        button{
+
+        button {
             color: black;
             background: #FFC801;
             padding: 10px;
             border-radius: 5px;
             border: none;
             margin: auto;
-           
+
         }
     }
 }
 
-.btn_cv{
+.btn_cv {
     background-color: #FFC801;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  i{
-    margin: 0 5px;
-  }
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
 
-  &:hover{
-    background-color: #ecb900;
-    color: black !important;
-  }
+    i {
+        margin: 0 5px;
+    }
+
+    &:hover {
+        background-color: #ecb900;
+        color: black !important;
+    }
 }
 
 @media screen and (max-width:800px) {
-    .intro, .about, .projects{
+
+    .intro,
+    .about,
+    .projects {
         margin-top: 100px;
-        img{
+
+        img {
             max-width: 250px;
             margin-bottom: 50px;
         }
 
     }
+
     .intro {
-        h5{
+        h5 {
             font-size: 16px;
 
         }
-        p{
+
+        p {
             font-size: 14px;
         }
-        a{
+
+        a {
             font-size: 14px;
         }
-        img{
+
+        img {
             max-width: 300px;
 
         }
     }
-    .about{
-        h2{
-            font-size:26px;
+
+    .about {
+        h2 {
+            font-size: 26px;
         }
-        p{
+
+        p {
             font-size: 14px;
-            
+
         }
-    
+
     }
 
 

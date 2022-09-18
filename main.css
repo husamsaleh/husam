@@ -244,10 +244,14 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-  .intro, .about, .projects {
+  .intro,
+.about,
+.projects {
     margin-top: 100px;
   }
-  .intro img, .about img, .projects img {
+  .intro img,
+.about img,
+.projects img {
     max-width: 250px;
     margin-bottom: 50px;
   }
