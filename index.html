@@ -4,52 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Husam</title>
+    <title>CentraGo John adam</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f7e2387afa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-   
-  <nav class="navbar navbar-expand-lg  d-flex flex-row justify-content-between px-5 position-fixed fixed-top  ">
+  <nav class="navbar navbar-expand-lg  d-flex flex-row justify-content-between px-5 position-fixed fixed-top  " id="navbar">
+    <a class="navbar-brand mx-4 fs-2 nav-link "  id="nav-link" href="#">John Adam</a>
+  
+    <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     
-      <a class="navbar-brand mx-4 fs-2 text-black" href="#">Husam Saleh</a>
-
-      <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse flex-grow-0  mx-5" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0  mt-3 mt-lg-1  align-items-center fs-5  " >
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#projects">PROJECTS</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link text-white" href="#social">SOCIAL</a>
-          </li> -->
-          <li class="nav-item">
-            <!-- <a class="nav-link text-white" aria-current="page" href="#">CONTACT</a> -->  
-           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            CONTACT
-          </button>
-
-<!-- Modal -->
-
-
-
-            <!-- modal end -->
-          </li>
-         
-        </ul>
-        
-      </div>
-    
+    <div class="collapse navbar-collapse flex-grow-0  mx-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0  mt-3 mt-lg-1  align-items-center fs-5  " >
+        <li class="nav-item">
+          <a class="nav-link "  id="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white" href="#social">SOCIAL</a>
+        </li> -->
+        <li class="nav-item">
+          <!-- <a class="nav-link text-white" aria-current="page" href="#">CONTACT</a> -->  
+         <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal">
+          CONTACT
+        </button>
+      </ul>
+    </div>
   </nav>
+  
+  <style>
+    
+    #navbar {
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+
+    }
+  
+    #navbar.navbar-scrolled {
+      background-color: black;
+    }
+    #nav-link{
+      color: rgb(0, 0, 0) ;
+    }
+  </style>
+  
+  <script>
+   
+    window.onscroll = function() {
+      var navbar = document.getElementById("navbar");
+      
+     
+      if (window.pageYOffset > 50) {
+        navbar.classList.add("navbar-scrolled");
+        document.querySelectorAll(".nav-link").forEach(function(element) {
+          element.style.color = "white";
+        });
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+        document.querySelectorAll(".nav-link").forEach(function(element) {
+          element.style.color = "black";
+        });
+      }
+    };
+  </script>
+  
 
 
   <div class="container intro d-flex flex-md-row flex-column align-items-center align-content-center justify-content-evenly   ">
@@ -76,7 +101,7 @@
   <div>
     <h2 class="text-uppercase">About Me</h2>
     <h5 class="bg-black text-white">Software Engineer And Web Developer</h5>
-    <p class="">Hey There!! My name is Husam Saleh and this is my website. <br> I love to make great looking, high-performing websites and <br> I am very excited to learn and work as much as i can.
+    <p class="">Hey There!! My name is John adam and this is my website. <br> I love to make great looking, high-performing websites and <br> I am very excited to learn and work as much as i can.
     </p>
   </div>
   <img src="./images/v1.jpg" alt="">
@@ -89,13 +114,13 @@
     <h2>PROJECTS</h2>
     <ul> 
       <li>
-        <a href="#">Bluezah.com</a>
+        <a href="#">CentraGo</a>
       </li>
       <li>
-        <a href="#">FutureGen.net</a>
+        <a href="#">CentraGo</a>
       </li>
       <li>
-        <a href="#">ox2z.com</a>
+        <a href="#">CentraGo</a>
       </li>
   
     </ul>
@@ -161,47 +186,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-     <script language="JavaScript">
-      
-      window.onload = function () {
-          document.addEventListener("contextmenu", function (e) {
-              e.preventDefault();
-          }, false);
-          document.addEventListener("keydown", function (e) {
-              //document.onkeydown = function(e) {
-              // "I" key
-              if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                  disabledEvent(e);
-              }
-              // "J" key
-              if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                  disabledEvent(e);
-              }
-              // "S" key + macOS
-              if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                  disabledEvent(e);
-              }
-              // "U" key
-              if (e.ctrlKey && e.keyCode == 85) {
-                  disabledEvent(e);
-              }
-              // "F12" key
-              if (event.keyCode == 123) {
-                  disabledEvent(e);
-              }
-          }, false);
-          function disabledEvent(e) {
-              if (e.stopPropagation) {
-                  e.stopPropagation();
-              } else if (window.event) {
-                  window.event.cancelBubble = true;
-              }
-              e.preventDefault();
-              return false;
-          }
-      }
-
-</script> 
+    
 
   </body>
 </html>
